@@ -63,7 +63,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 53. All Animation CSS
 =======================*/
 :root {
-    --gradient-gold: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    --gradient-gold: var(--background-pages) !important;
     --background-pages: url(../images/background_header_4.png) !important;
 }
 
@@ -260,7 +260,7 @@ section.hero_area {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -270,7 +270,7 @@ section.hero_area {
     padding-bottom: 17px;
     border-radius: 30px;
     display: inline-block;
-    background-color: var(--gradient-gold);
+    background-color: var(--gradient-gold) !important;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border: none;
@@ -292,7 +292,7 @@ section.hero_area {
 
 .hero_btn a:hover,
 .hero_btn a:focus {
-    color: var(--gradient-gold);
+    color: #000 !important;
 }
 
 .hero_btn a:hover span,
@@ -315,7 +315,7 @@ section.hero_area {
 
 .hero_btn a:hover:before {
     width: 120px;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     z-index: 1;
 }
@@ -682,7 +682,7 @@ section.service_area.boxed {
 }
 
 .service_single_item:hover:before {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -1051,7 +1051,7 @@ a.banner-play-btn {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -1083,7 +1083,7 @@ a.banner-play-btn {
 
 .about_btn a:hover,
 .about_btn a:focus {
-    color: #ffff;
+    color: #000000 !important;
 }
 
 .about_btn a:hover span,
@@ -1336,7 +1336,7 @@ h3.steps_number {
 }
 
 .steps-single-item:hover .steps_icon {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -1547,7 +1547,7 @@ section.pricing-area .section_title p {
     padding-top: 0;
     padding-bottom: 10px;
     border: 0;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     color: #fff;
     width: 80px;
@@ -1590,7 +1590,7 @@ section.case-study-area {
 .case-study-thumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     padding: 0;
     border-radius: 10px;
@@ -1625,7 +1625,7 @@ section.case-study-area {
 
 .case-study-content {
     width: 75%;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     padding: 30px 30px 10px;
     position: absolute;
@@ -2816,7 +2816,11 @@ span.fill {
 ============================================================ */
 
 section.call_area {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center top !important;
+
 
     position: relative;
     padding: 33px 0 40px;
@@ -3205,7 +3209,7 @@ section.pricing-area.style_two {
     border: 1px solid #ffffff91;
     color: #fff;
     padding: 15px 42px 15px;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -3222,7 +3226,7 @@ section.pricing-area.style_two {
 }
 
 .pricing-single-items.style_two:after {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -3384,8 +3388,10 @@ section.call_area.style_two .call-do-content h2 {
     width: 100%;
     height: 56px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
-
+    background: var(--background-pages) !important;
+    background-repeat: no-repeat !important;
+    /* background-size: cover !important; */
+    background-position: top bottom !important;
     border: 0;
     outline: 0;
     font-size: 16px;
@@ -3571,7 +3577,8 @@ section.footer_area.style_two {
   <--- Start consalt Consalt Topber Area Style Two CSS --->
 ============================================================ */
 .topber_area.style_two {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%, #a67c00 0%) !important;
+    background: var(--background-pages) !important;
+    background-position: top bottom !important;
     position: relative;
     z-index: 1;
 }
@@ -3582,7 +3589,7 @@ section.footer_area.style_two {
     left: -24px;
     height: 100%;
     width: 53%;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     z-index: -1;
     transform: skew(-34deg);
@@ -3594,7 +3601,7 @@ section.footer_area.style_two {
     right: 0;
     left: 85px;
     margin: auto;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     width: 5px;
     height: 100%;
@@ -3654,7 +3661,7 @@ section.footer_area.style_two {
 }
 
 .header-button.style_two a {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     padding: 15px 31px;
     border-radius: 5px;
@@ -3682,15 +3689,17 @@ section.footer_area.style_two {
 /* Sticky */
 
 .sticky.consalt-header-area.style_three {
-    background-image: var(--background-pages) !important;
-    background-size: cover !important;
+    background: var(--background-pages) !important;
     background-repeat: no-repeat !important;
-    background-position: top !important;
+    background-size: cover !important;
+    background-position: top bottom !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
     transition: background-color 0.3s ease-in-out;
     background-color: transparent !important;
     backdrop-filter: blur(10px) !important;
 }
+
+
 
 .header-nav ul li ul {
     background-color: rgba(0, 0, 0, 0.6) !important;
@@ -3772,6 +3781,8 @@ section.hero_area.style_three {
 
 .hero_area.style_three .hero_btn a {
     border-radius: 5px;
+    background: var(--background-pages) !important;
+    background-position: top bottom !important;
 }
 
 .hero_area.style_three .hero-thumb {
@@ -3860,6 +3871,8 @@ section.hero_area.style_three {
 }
 
 .about_btn.style_three a {
+    background: var(--background-pages) !important;
+    background-position: top bottom !important;
     border-radius: 5px;
     padding: 15px 40px;
 }
@@ -3895,7 +3908,10 @@ section.hero_area.style_three {
 ============================================================ */
 
 .marquee_area.style_two {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center top;
 
     padding: 43px 0 42px;
     position: relative;
@@ -4124,7 +4140,7 @@ section.service_area.style_two.style_three.inner_page {
     color: #ffff;
     font-size: 14px;
     margin: 14px 0;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     display: inline-block;
     padding: 3px 20px;
@@ -4486,7 +4502,7 @@ section.why_choose_us {
 }
 
 .team-social-icon ul li a:hover {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     color: #fff;
 }
@@ -4573,7 +4589,7 @@ section.testimonial_area.style_three {
     height: 18px;
     width: 18px;
     line-height: 18px;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     color: #fff;
     border-radius: 50%;
@@ -4935,7 +4951,7 @@ section.contact_area {
 
 .blog_category a {
     display: inline-block;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     font-size: 14px;
     color: #ffffff;
@@ -6678,7 +6694,7 @@ section.service_area.styel_five .section_title.text-center {
 }
 
 .service_single_item.style_five:hover .service_icon2 {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -7123,7 +7139,7 @@ section.footer_area.style_five {
 }
 
 .consalt-header-area.style_sixs .header-button.style_two a {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     padding: 11px 42px;
     border-radius: 5px;
@@ -7986,7 +8002,7 @@ section.blog_area.style_sixs .meta-blog p span {
 }
 
 .consalt-header-area.inner_page .header-button.style_two a {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     padding: 15px 35px;
     border: 1px solid transparent;
@@ -8330,7 +8346,7 @@ a.active {
 .portfolio_nav ul li:hover,
 .portfolio_nav ul li.current_menu_item {
     color: #fff;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -8397,7 +8413,7 @@ a.active {
     top: 11px;
     height: 2px;
     width: 30px;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -8545,7 +8561,7 @@ p.port_text:before {
 }
 
 .pagination_container .call_social_icon ul li a:hover {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     color: #fff;
 }
@@ -8808,7 +8824,7 @@ section.contact_area.inner_section {
 
 .contact_main_info .call-do-action-info:hover .call-do-social_icon i {
     color: #fff;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -8995,7 +9011,7 @@ section.counter_area.inner_page {
 }
 
 .inner_page .counter-single-item.style_two.second {
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -9060,7 +9076,7 @@ p.lead {
     margin-top: 9px;
     display: inline-block;
     border-radius: 30px;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
 }
 
@@ -9956,7 +9972,7 @@ button.close-search i {
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #a67c00 0%, #b8860b 25%, #ffd700 50%, #b8860b 75%, #a67c00 100%) !important;
+    background: var(--background-pages) !important;
 
     z-index: 1000;
 }
